@@ -50,7 +50,7 @@ body{
     background-color: white;
     padding: 5px 50px;
 }
-.navbar{
+/* .navbar{
     width: auto;
     height: 30px;
     background-color: mediumseagreen;
@@ -67,6 +67,7 @@ body{
 .navbar a:hover{
     transform: scale(1.3);
 }
+
 .dropdown{
     position: relative;
     display: inline-block;
@@ -99,8 +100,99 @@ body{
 }
 .dropbtn:hover{
  transform: scale(1.3);
+} */
+.menu button{
+    position: absolute;
+    display: none;
+}
+.navbar{
+width: auto;
+height: 30px;
+background-color: mediumseagreen;
+display: flex;
+justify-content: space-around;
+padding-top: 10px;
+border-radius: 0 10px 0 10px;
+}
+.navbar a{
+text-decoration: none;
+font-weight: 700;
+color: white;
+}
+.navbar a:hover{
+transform: scale(1.3);
 }
 
+.dropdown{
+position: relative;
+display: inline-block;
+}
+
+.dropbtn{
+text-decoration: none;
+font-weight: 700;
+color: white;
+}
+.dropdown-menu{
+display: none;
+position: absolute;
+background-color: white;
+z-index: 1;
+margin: 11px auto;
+width: max-content;
+}
+.dropdown-menu a{
+color: black;
+padding: 5px 5px;
+text-decoration: none;
+display: block;
+}
+.dropdown:hover .dropdown-menu{
+display: block;
+}
+.dropdown-menu a:hover{
+transform: scale(1);
+}
+.dropbtn:hover{
+transform: scale(1.3);
+}
+
+@media screen and (max-width:600px) {
+.menu{
+    display: table;
+    margin-top: 10px;
+}
+.menu button{
+display: block;
+position: relative;
+font-size: 20px;
+}
+.navbar{
+display: none;
+position: relative;
+z-index: 1;
+width: 85px;
+height: fit-content;
+background-color: lightgray;
+}
+.navbar a{
+    padding: 5px;
+text-decoration: none;
+font-weight: 700;
+color: mediumseagreen;
+}
+.navbar a:hover{
+    transform: scale(1);
+    }
+.dropdown{
+position: absolute;
+display: none;
+}
+.menu:hover .navbar{
+    display: flex;
+flex-direction: column;
+}
+}
 
 
 
@@ -111,6 +203,35 @@ body{
     color: black;
     margin-top: 100px;
 }
+.animation {
+    height:30px;
+    overflow:hidden;
+  }
+  
+  .animation > div > h4 {
+    height:3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    display:inline-block;
+  }
+  .animation div:first-child{
+    animation: text-animation 8s infinite;
+  }
+
+  
+  @keyframes text-animation {
+    0% {margin-top: 0;}
+    10% {margin-top: 0;}
+    20% {margin-top: -3rem;}
+    30% {margin-top: -3rem;}
+    40% {margin-top: -6rem;}
+    60% {margin-top: -6rem;}
+    70% {margin-top: -3rem;}
+    80% {margin-top: -3rem;}
+    90% {margin-top: 0;}
+    100% {margin-top: 0;}
+  }
+  
 .content button{
     font-size: 12px;
     font-weight: 700;
