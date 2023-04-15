@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif+JP&display=swap');
+
+body{
+    margin: 0px;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background: linear-gradient(60deg, white,white,rgb(83, 82, 82));
+    /* position: sticky;
+    top: 0px; */
+}
+#logo{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    float: right;
+    padding: 0px 20px;
+    font-family: 'Kaushan Script', cursive;
+    color: red;
+}
+#logo a{
+    text-decoration: none;
+}
+.head h1{
+    padding: 10px;
+    color: burlywood;
+}
+.head h1 span{
+    float: right;
+    font-size: small;
+}
+.main{
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+   
+}
+.row{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.box{
+    width: 250px;
+    padding: 10px;
+    margin-bottom:15px;
+    height: auto;
+    background-color: cadetblue;
+    text-align: center;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+} 
+.box i{
+    border: 8px solid lightslategray;
+    border-style: outset;
+    font-size: 20px;
+    padding: 10px;
+    width: 30px;
+}
+.box ul{
+    padding: 0px;
+}
+.box ul li{
+    list-style-type: none;
+}
+.boxs{
+    padding: 20px;
+}
+.boxs{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.boxs div{
+    width:150px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    border-right: 1px solid black;
+}
+
+@media screen and (max-width:700px) {
+    .main{
+        width: 100%;
+    }
+    .head h1{
+        padding-top: 70px;
+    }
+}
