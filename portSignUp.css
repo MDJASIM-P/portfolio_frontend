@@ -12,6 +12,14 @@ body{
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
+.main a{
+    float: right;
+}
+.main h2{
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
 .main form input{ 
     margin-top: 5px;
     width: 100%;
